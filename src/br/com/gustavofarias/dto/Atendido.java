@@ -1,41 +1,40 @@
 package br.com.gustavofarias.dto;
 
-public class Atendido {
+public class Atendido{
 
-	private String nomeCompleto;
-	private String dtNas;
-	private String tel;
-	private String email;
+	private String cpf;
 	
-	public String getNomeCompleto() {
-		return nomeCompleto;
+	private String rg;
+	
+	private String rendaFamiliar;
+	
+	@Override
+	public String toString() {
+		return "Atendido [cpf=" + cpf + ", rg=" + rg + ", rendaFamiliar=" + rendaFamiliar + "]";
 	}
 
-	public void setNomeCompleto(String nomeCompleto) {
-		this.nomeCompleto = nomeCompleto;
+	public String getCpf() {
+		return cpf;
 	}
 
-	public String getDtNas() {
-		return dtNas;
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 
-	public void setDtNas(String dtNas) {
-		this.dtNas = dtNas;
+	public String getRg() {
+		return rg;
 	}
 
-	public String getTel() {
-		return tel;
+	public void setRg(String rg) {
+		this.rg = rg;
 	}
 
-	public void setTel(String tel) {
-		this.tel = tel;
+	public String getRendaFamiliar() {
+		return rendaFamiliar;
 	}
 
-	public String getEmail() {
-		return email;
+	public void setRendaFamiliar(String rendaFamiliar) {
+		this.rendaFamiliar = rendaFamiliar;
 	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
+	
 }
